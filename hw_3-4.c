@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <time.h>
 #include <windows.h>
-#define ROWS 4
-#define COLS 4
+#define ROWS 20
+#define COLS 20
 
 int matrix [ROWS][COLS];
 int ro,co;
@@ -47,6 +47,7 @@ int main() {
 
  matrix[ro][co]= 1;
  print_matrix();
+ system("cls");
  Sleep(1500);
 
  for (i=0;i<100000; i++) {
@@ -80,6 +81,7 @@ int main() {
 
  }
  print_matrix();
+ system("cls");
  Sleep(100);
 
  for ( int a=0; a < ROWS; a++) {
